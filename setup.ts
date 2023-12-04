@@ -65,7 +65,7 @@ async function createUser(entityName: string): Promise<{ newAccountId: string; P
   }
 }
 
-// Call the function for each entity
+
 
 // Configure accounts and client, and generate needed keys
 const operatorId: AccountId = AccountId.fromString(process.env.ACCOUNT_ID!);
