@@ -26,7 +26,7 @@ npm start
 ```
 
 ### How to run setup.ts
-You can simply run 'setup.ts' by running `npx ts-node setup.ts` 
+You can simply run 'setup.ts' by running `npx ts-node setup.ts`  
 At the end of the setup.ts file, three functions are called: createNFT(), createSoulboundTokens(), and createFungibleToken(). The createNFT() function is not commented out. If you want to run the other two methods, please uncomment them.
 
 ### Design and Implementation of setup.ts
