@@ -1,0 +1,28 @@
+{
+  "name": "mortgage-marketplace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafeRate/mortgage-marketplace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SafeRate/mortgage-marketplace/issues"
+  },
+  "homepage": "https://github.com/SafeRate/mortgage-marketplace#readme",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.34.1",
+    "dotenv": "^16.3.1",
+    "nft.storage": "^7.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  },
+  "description": ""
+}
