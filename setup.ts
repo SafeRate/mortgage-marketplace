@@ -116,7 +116,7 @@ async function executeTransaction(transaction: any, key: PrivateKey) {
  * @param {string} TokenSymbol - The symbol of the token.
  * @returns {Promise<void>} A promise that resolves when the process is complete.
  */
-async function createSoulboundTokens(TokenName: string, TokenSymbol: string): Promise<void> {
+export async function createSoulboundTokens(TokenName: string, TokenSymbol: string): Promise<void> {
   try {
     // Obtain newAccountId and private Key that we are going to transfer to
     const { newAccountId: newId, PKEY: pk } = await createUser(TokenName);
@@ -277,7 +277,7 @@ async function createSoulboundTokens(TokenName: string, TokenSymbol: string): Pr
  * @param {number} initialSupply - The initial supply of the fungible token.
  * @throws {Error} Throws an error if there's an issue creating the token or associating it with the treasury account.
  */
-async function createFungibleToken(tokenName: string, initialSupply: number) {
+export async function createFungibleToken(tokenName: string, initialSupply: number) {
   try {
     // Create the fungible token
     const tokenCreate = new TokenCreateTransaction()
@@ -348,7 +348,7 @@ async function createFungibleToken(tokenName: string, initialSupply: number) {
  * @param {string} TokenName - The name of the NFT.
  * @throws {Error} Throws an error if there's an issue creating the NFT or minting new tokens.
  */
-async function createNft(TokenName: string): Promise<void> {
+export async function createNft(TokenName: string): Promise<void> {
   try {
     // Create the NFT
     const nftCreate = await new TokenCreateTransaction()
@@ -456,6 +456,7 @@ function makeTokenSymbol(tokenName: string): string {
   return symbol.toUpperCase();
 }
 
+
 //  ----------------- Soulbound Tokens Test -----------------
 // Lender
 // Servicer
@@ -477,7 +478,7 @@ function makeTokenSymbol(tokenName: string): string {
 // Loan beneficiary token
 // Loan servicing token
 
-createNft("Loan beneficiary token");
+//createNft("Loan beneficiary token");
 
 
 
@@ -489,7 +490,7 @@ createNft("Loan beneficiary token");
 // Principal written down
 // Interest accumulated
 // Interest paid
-// Interest written down
+// Interest written downm
 // Fees outstanding
 // Fees paid
 // Fees written down
